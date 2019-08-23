@@ -5,9 +5,6 @@ import GlobalStyle from 'styles/global';
 import { Provider } from 'react-redux';
 import configureStore from 'store';
 import * as serviceWorker from './serviceWorker';
-import hackerNewsApi from 'services/hackerNewsApi';
-
-hackerNewsApi.getTopStoryIds().then(id => console.log(id));
 
 const renderApp = () => {
   const initialState = {};
